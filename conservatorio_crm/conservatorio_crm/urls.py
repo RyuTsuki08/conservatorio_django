@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from preinscripcion import views as preinscripcion_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('preinscripcion/', preinscripcion_views.index, name='index'),
 ]
